@@ -31,9 +31,9 @@ class TodoApp extends React.Component {
     } else if (this.state.options.indexOf(option) > -1) {
       return "this option already exists";
     }
-    this.setState((prevState) => {
+    this.setState((prevState) => {  
       return {
-        options: prevState.options.concat(option),
+        options: prevState.options.concat(option), // concat is to add
       };
     });
   }

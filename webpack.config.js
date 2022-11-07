@@ -11,12 +11,12 @@ module.exports =(env) => {
   module: {
     rules: [
       {
-        loader: "babel-loader",
+        loader: "babel-loader",   
         test: /\.js$/,
         exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
+        test: /\.scss$/,  // test css
         use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
