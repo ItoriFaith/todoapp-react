@@ -2,8 +2,7 @@
   "name": "react-babel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js"
-  
+  "main": "index.js",
   "scripts": {
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "build-dev": "webpack",
@@ -11,7 +10,7 @@
     "serve": "live-server public/",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js"
-    "heroku-postbuld": "npm run build-prod"
+    "heroku-postbuild": "npm run build-prod"
   },
   "engine": {
     "node": "<=14.x.x",
